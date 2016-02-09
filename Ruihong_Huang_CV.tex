@@ -10,11 +10,15 @@
 \addtolength{\footskip}{-0.5cm}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{url}
-\usepackage{hyperref}
 \usepackage{xtab}
+\usepackage{longtable}
 \usepackage{graphicx}
 \usepackage{array}	
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{datetime}
+
+\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
 \begin{document}
 \newcommand{\HU}[0]{Humboldt Universit\"at zu Berlin}
 \fancyhf{}
@@ -24,65 +28,60 @@
 \hrule width \hsize height 2pt \kern 1mm \hrule width \hsize   
 \end{minipage}\par}
 \pagestyle{fancy}
-\lfoot{April, 2013}
+\lfoot{\monthyear\today}
 \cfoot{Ruihong Huang}
-\rfoot{Page \thepage\ of 2}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
 \begin{tabular}[h]{p{0.25\textwidth}p{0.6\textwidth}}
-  \vfill\hspace{-10pt}\includegraphics[width=0.25\textwidth]{bew/ruihong_2013.jpg} &\vspace{1pt}\large{\textbf{Dr. Huang, Ruihong}\newline
+ &\vspace{1pt}\large{\textbf{Dr. Huang, Ruihong}\newline
   \vspace{-8pt} \newline
-Karl-Marx Allee 48 \newline 
-10178 Berlin\newline
-Germany \newline
-Tel: +49 30 2093 1459  \newline
-Mob: +49 176 4904 9240 \newline
-Email: \verb|ruihong.huang@wiwi.hu-berlin.de| } \\
+Tel: +44 74 7399 9621  \newline
+Email: \verb|ruihong.huang@gmail.com| } \\
 \end{tabular}\\
 \rule[5pt]{1\textwidth}{1pt}\par
 \setlength{\tabcolsep}{10pt}
 \setlength{\extrarowheight}{6pt}
-\begin{xtabular}[h]{p{0.15\textwidth}p{0.75\textwidth}}
+\begin{longtable}[h]{p{0.15\textwidth}p{0.75\textwidth}}
   PROFESSIONAL\newline POSITIONS / \newline PRACTICAL \newline EXPERIENCE 
-  & \textbf{Postdoc} \hfill 02/2012 -- present \newline Humboldt Universit\"at zu Berlin \hfill Berlin, Germany\newline Institute for Statistics and Econometrics \newline \emph{--Research on high-frequency trading and hidden liquidity in equity markets.} \\
+  & \textbf{Associate Director} \hfill 11/2013 -- present \newline Direct Execution Service, UBS\hfill London, UK\newline  
+  \emph{-- Statistical modelling: algo execution prediction, market impact model, execution time model;}\newline
+  \emph{-- Platform improving: SOR posting fraction model, stop order model;}\newline
+  \emph{-- Algo developing: portfolio execution algo;} \newline
+  \emph{-- TCA: Alpha profile, ad hoc TCA reports.}\\
+  & \textbf{Founder} \hfill 04/2015 -- present\newline Frischdaten UG \hfill Berlin, Germany \newline  
+  \emph{-- Software developing: Since 2010 I have been developing and maintaining the core of LOBSTER that constructs NASDAQ order book and order flow data by using TotalView-ITCH message. http://lobsterdata.com } \\
+  & \textbf{Senior Data Analyst} \hfill 08/2013 -- 11/2013 \newline Zalando GmbH \hfill Berlin, Germany \newline  \emph{-- Data mining.} \\
+  & \textbf{Postdoc} \hfill 02/2012 -- 07/2013 \newline Humboldt Universit\"at zu Berlin \hfill Berlin, Germany\newline Institute for Statistics and Econometrics \newline \emph{--Research on high-frequency trading and hidden liquidity in equity markets.} \\
   & \textbf{Scientific Employee} \hfill 08/2008 -- 01/2012 \newline Humboldt Universit\"at zu Berlin \hfill Berlin, Germany\newline Institute for Statistics and Econometrics \\
   & \textbf{(External) Scientific Employee} \hfill 02/2008 -- 07/2011 \newline Deutsche Bank \hfill Berlin, Germany\newline Quantitative Products Laboratory\newline \emph{-- Research on econometric models for the limit order book and the order flow.} \\
   & \textbf{Consultant} \hfill 06/2002 -- 09/2003 \newline Ruling Consulting Co.\hfill Fuzhou, China \newline\emph{-- Advising Chinese mainland enterprises on the IPO procedure in the Hong Kong Exchanges.} \\
   & \textbf{Investment Analyst} \hfill 10/1998 -- 05/2002 \newline Hydro-Power Exploitation Co.\hfill Quanzhou, China \newline\emph{--Evaluating state's investment in the hydro-power industry.} \newline\\
 EDUCATIONS
-  & \textbf{Doctorate in Econometrics} \hfill 02/1998 -- 02/2012 \newline Humboldt Universit\"at zu Berlin \hfill Berlin, Germany \newline Institute for Statistics and Econometrics\newline\emph{-- The econometric analysis on the high frequency order data. Graduated summa cum laude.} \\
+& \textbf{Doctorate in Econometrics, \emph{summa cum laude}} \hfill 02/2008 -- 02/2012 \newline Humboldt Universit\"at zu Berlin \hfill Berlin, Germany \newline Institute for Statistics and Econometrics\newline\emph{-- The econometric analysis on the high frequency order data.} \\
   & \textbf{Master student in Applied Math.} \hfill 09/2006 -- 02/2008 \newline Royal Inst. of Tech. (KTH) \hfill Stockholm, Sweden\newline School of Computer Science and Communication \newline\emph{-- Studies in numerical methods and the high-performance computation.} \\
+  \\
   & \textbf{M.Sc. in Economics} \hfill 04/2004 -- 12/2007 \newline University of Copenhagen \hfill Copenhagen, Denmark  \newline Department of Economics \newline\emph{-- Studies in financial economics.}\\
   & \textbf{B.E. in Computer Applications} \hfill 09/1996 -- 07/1998 \newline Hohai University \hfill Nanjing, China \newline\emph{-- Studies in software design for industrial management.}\\
   & \textbf{B.M. in Management Engineering} \hfill 09/1993 -- 07/1997 \newline Hohai University \hfill Nanjing, China \newline\emph{-- Studies in the material management and delivery system.}\newline\\
-\end{xtabular}\\\newline
-\begin{tabular}[h]{p{0.15\textwidth}p{0.75\textwidth}}
   COMPUTER \newline SKILLS &\vspace{-20pt}
    \begin{tabular}[t]{|p{0.18\textwidth}|p{0.38\textwidth}|c|}\hline
     Classification & Details & Years\\ \hline
-    Software\newline Development & LOBSTER \newline http://lobsterdata.com & 3 \\ \hline
-    OS & Gentoo/ Debian/ Arch Linux & 8 \\ \hline
     Programming  & C++, Java & 8 \\ \cline{2-3}
-                 & Python, Shell script, SQL & 4 \\ \cline{2-3}
-                 & KDB+, MPI, OpenMP & 2 \\ \hline
-    Math Software& R,  Matlab     & 7 \\ \hline
+                 & Python, SQL & 4 \\ \cline{2-3}
+                 & KDB+ & 2 \\           \hline
+    Math Software& R,  Matlab     & 9 \\ \hline
   \end{tabular} \\
   &\\
   PUBLICATIONS\newline AND \newline RESEARCH
-  &\vspace{-20pt}
+  &\vspace{-10pt}
   \begin{enumerate}
+    \item Shen, Y. and R. Huang (2014) ``Risk-averse reinforcement learning for algorithmic trading'', Conference on Computational Intelligence for Financial Engineering \& Economics (CIFEr), 2014 IEEE.
     \item Hautsch, N. and R. Huang (2012), ``The market impact of a limit order'', Journal of Economic Dynamics and Control, 36, 501 – 522.
     \item  Hautsch, N. and R. Huang (2012), ``Limit order flow, market impact and optimal order sizes: Evidence from NASDAQ TotalView-ITCH data'' in: ``Market Microstructure: Confronting Many Viewpoints'', F. Abergel, J.-P. Bouchaud, T. Foucault, C. Lehal, M. Rosenbaum (eds.), Wiley Intersciences.
     \item Hautsch, N. and R. Huang (2012), ``On the dark side of the market: Identifying and analyzing hidden order placements'' Discussion Paper 2012-4, CRC 649, \HU.
     \item  Huang, R. and T. Xiao (2012), ``How much can hidden liquidity improve the trading price'' Working Paper, \HU\ and Harvard University.
     \item Huang, R. and T. Polak (2011), ``LOBSTER: Limit order book reconstruction system'' Working Paper, \HU.
-    \item ``The impact of public news on the limit order flow'', ongoing research with A. Gro\ss-Klu{\ss}mann (\HU).
-    \item ``Does the circuit breaker help stabilizing the market'', ongoing research with N. Hautsch (\HU).
-    \item ``Does the hidden liquidity harm the price discovery'', ongoing research with H. Zhu (MIT).
-    \item ``Reinforcement learning on the optimal trading strategy with limit order books'', ongoing research with Y. Sun (Technische Universit\"at Berlin).
+    \item ``Analysis on limit order execution time'', Ongoing project with P. Malec (University of Cambridge).
   \end{enumerate}\\
-  TEACHING&\vspace{-20pt}\begin{enumerate}
-    \item Advanced Econometrics, 2012
-    \item Seminar Econometric Projects, 2010\newline
-  \end{enumerate}\\
-  \vspace{-30pt}LANGUAGES & \vspace{-30pt}Chinese, English, German (level A2)
-\end{tabular}
+  \vspace{-30pt}LANGUAGES & \vspace{-30pt}Chinese, English, German 
+\end{longtable}
 \end{document}
